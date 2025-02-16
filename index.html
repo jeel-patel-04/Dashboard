@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    
+    <!-- Sidebar -->
+    <div class="flex h-screen">
+        <aside class="w-64 bg-gradient-to-b from-gray-800 to-gray-900 text-white p-5 hidden md:block">
+            <h2 class="text-2xl font-bold text-blue-400">Dashboard</h2>
+            <nav class="mt-5">
+                <ul>
+                    <li class="py-2 px-3 hover:bg-blue-600 rounded transition"><a href="#">Home</a></li>
+                    <li class="py-2 px-3 hover:bg-blue-600 rounded transition"><a href="#">Analytics</a></li>
+                    <li class="py-2 px-3 hover:bg-blue-600 rounded transition"><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="flex-1 p-5">
+            <header class="bg-gray-800 p-4 rounded shadow flex justify-between items-center">
+                <h1 class="text-xl font-bold text-blue-400">Dashboard Overview</h1>
+                <button class="md:hidden px-3 py-1 bg-blue-600 text-white rounded">Menu</button>
+            </header>
+            
+            <!-- Stats Cards -->
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5">
+                <div class="p-5 bg-gray-800 shadow-lg rounded-lg hover:bg-gray-700 transition">
+                    <h3 class="text-lg font-semibold text-blue-300">Users</h3>
+                    <p class="text-2xl">1,234</p>
+                </div>
+                <div class="p-5 bg-gray-800 shadow-lg rounded-lg hover:bg-gray-700 transition">
+                    <h3 class="text-lg font-semibold text-green-300">Sales</h3>
+                    <p class="text-2xl">₹1,23,450</p>
+                </div>
+                <div class="p-5 bg-gray-800 shadow-lg rounded-lg hover:bg-gray-700 transition">
+                    <h3 class="text-lg font-semibold text-yellow-300">Traffic</h3>
+                    <p class="text-2xl">56,789</p>
+                </div>
+            </section>
+            
+            <!-- Table Section -->
+            <section class="mt-5">
+                <h2 class="text-xl font-bold mb-3 text-purple-400">Recent Transactions</h2>
+                <div class="bg-gray-800 shadow rounded-lg p-5 overflow-x-auto">
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="bg-gray-700 text-gray-200">
+                                <th class="p-3 text-left">Date</th>
+                                <th class="p-3 text-left">User</th>
+                                <th class="p-3 text-left">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-t border-gray-600 hover:bg-gray-700 transition">
+                                <td class="p-3">2012-03-27</td>
+                                <td class="p-3">Jeel Patel</td>
+                                <td class="p-3 text-green-400">₹12,000</td>
+                            </tr>
+                            <tr class="border-t border-gray-600 hover:bg-gray-700 transition">
+                                <td class="p-3">2012-09-12</td>
+                                <td class="p-3">Manthan Jain</td>
+                                <td class="p-3 text-green-400">₹7,550</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+</body>
+</html>
